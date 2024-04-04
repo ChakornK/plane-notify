@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.9
 
 WORKDIR /plane-notify
 
@@ -20,7 +20,7 @@ RUN apt-get update && apt-get -y install --no-install-recommends \
 RUN pip install pipenv
 
 # Install dependencies
-COPY Pipfile* .
+COPY Pipfile* ./
 RUN pipenv install
 
 COPY . .

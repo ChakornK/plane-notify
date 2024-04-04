@@ -104,10 +104,8 @@ pipenv run python __main__.py
 Install [docker from their website](https://docs.docker.com/get-docker/). Run the following command from the root of the project.
 
 ```bash
-docker-compose up -d
+docker-compose up
 ```
-
-After running this command, due to the `-d` flag the container will be running in the background. To see the logs of the docker container use `docker logs CONTAINER` (add `-f` to continue streaming the containers output)
 
 ### Telegram message feature - march/2022
 
